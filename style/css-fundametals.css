@@ -1,0 +1,203 @@
+/* global styling */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 10px solid #1098ad;
+  background-color: #f5f9f8;
+  color: #444;
+  position: relative;
+}
+
+/* header styling */
+.main-header {
+  margin-bottom: 60px;
+  padding: 20px 40px;
+  background-color: #ededed;
+  
+}
+
+.header-title {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.header-list {
+  font-size: 18px;
+}
+
+/* header nav link styling */
+.header-list a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.header-list a:link:last-child {
+  margin-right: 0;
+}
+
+/* header img styling */
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+/* define web showing width */
+.container {
+  width: 800px;
+  margin: 0px auto;
+}
+
+/* head title and paragraph text styling */
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* ul & ol display */
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+
+/* normal list specifically styling */
+.normal-list li:first-child {
+  font-weight: bold;
+}
+
+.normal-list li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* related list don't show the dot */
+.related {
+  list-style: none;
+}
+
+/* Styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/* author styling */
+.author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+/* aside styling */
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+/* top btn styling */
+#myBtn {
+  font-size: 14px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  background-color: #15c7e2;
+
+  box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.15);
+
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+#myBtn:hover {
+  cursor: pointer;
+  background-color: #12acc4;
+  transition-duration: 0.15s;
+}
+
+#myBtn:active {
+  background-color: #0e8a9d;
+}
+
+/* add a red dot behind link */
+.article-header {
+  position: relative;
+}
+
+.red-dot::before {
+  content: "";
+  background-color: red;
+  border-radius:50%;
+  opacity: 0.85;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+
+  display: inline-block;
+  position: absolute;
+  top: 72px;
+  left: 44px;
+}
